@@ -1,0 +1,28 @@
+Online Retail Sales Analysis
+
+An end-to-end data analysis project using the Online Retail II dataset from the UCI Machine Learning Repository.
+
+Business Question
+
+"How is the business performing based on valid product sales, and where are the opportunities or risks?"
+
+The project investigates the raw transaction data, defines valid product sales for this analysis, prepares the data, and uses the resulting sales data for analysis.
+
+Dataset
+
+Source: UCI Machine Learning Repository — Online Retail II
+
+The dataset contains transaction records from an online retail business covering December 2009 to December 2011.
+
+Each row represents an item recorded on an invoice. An invoice can contain multiple rows.
+
+Tools
+DuckDB — Data investigation, preparation, and analysis
+SQL — Data querying and transformation
+VS Code — Development environment
+
+Project Workflow
+Data Source — Understand the dataset and its structure.
+Data Investigation — Examine the raw data and identify patterns, missing values, and unusual records.
+Data Preparation — Define valid product sales and prepare the data for analysis.
+Data Analysis — Analyze the prepared sales data and answer the business question.
