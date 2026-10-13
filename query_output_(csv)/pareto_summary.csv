@@ -1,0 +1,4 @@
+"metric_name","metric_value","business_definition"
+"Total Products","4902","Total count of unique product rows evaluated in the sample"
+"SKUs Generating 80% Revenue","1041","Number of top-performing products required to capture at least 80% of total revenue"
+"Pareto SKU Share (%)","21.24%","Percentage of product catalog driving 80% of total sales"
