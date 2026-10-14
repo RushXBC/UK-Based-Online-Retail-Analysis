@@ -34,7 +34,7 @@ Invoice date validity and date range
 
 Query:
 
-[di_00_initial_exploration.sql](di_00_initial_exploration.sql)
+[di_00_initial_exploration.sql](sql_queries/di_00_initial_exploration.sql)
 
 2. Transaction Characteristics
 
