@@ -9,6 +9,8 @@ LINK: https://archive.ics.uci.edu/dataset/502/online+retail+ii
 
 The dataset contains transaction records from an online retail business covering December 2009 to December 2011.
 
+<br>
+
 Dataset Constraints & Analytical Ownership
 
 No External Reference: The source dataset does not include operational documentation or an active point of contact for data inquiries.
