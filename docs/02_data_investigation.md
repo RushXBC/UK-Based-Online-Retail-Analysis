@@ -19,6 +19,7 @@ The first investigation established a basic understanding of the dataset.
 It examined:
 
 Total number of rows
+
 Distinct invoices
 Distinct StockCodes
 Distinct descriptions
