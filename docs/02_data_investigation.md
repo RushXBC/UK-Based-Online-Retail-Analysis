@@ -34,7 +34,7 @@ Invoice date validity and date range
 
 Query:
 
-[di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_01_basic_kpis.sql)
+[di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_00_initial_exploration.sql)
 
 2. Transaction Characteristics
 
