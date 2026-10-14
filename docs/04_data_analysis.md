@@ -1,6 +1,6 @@
 04 — Data Analysis
 
-![](https://img.shields.io/badge/-Objective-orange
+![](https://img.shields.io/badge/-Objective-orange)
 
 Analyze the prepared valid product sales data to answer the business question:
 
