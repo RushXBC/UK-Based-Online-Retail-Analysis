@@ -1,11 +1,11 @@
 **03 — Data Preparation**
 
-Objective
+**Objective**
 
 Prepare the transaction data for analysis by defining valid product sales, handling missing descriptions, applying data standardization, removing non-product transactions, and removing exact duplicate rows.
 
 
---1. Initial Preparation--
+**1. Initial Preparation**
 
 The initial preparation defines the basic rules for a valid product sale:
 
@@ -29,7 +29,7 @@ Query: (creates a view of the initial prepared dataset)
 [dp_00_prepare_valid_product_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_00_prepare_valid_product_sales.sql)
 
 
-2. Initial Validation
+**2. Initial Validation**
 
 The initial prepared dataset is validated to check the preparation rules and identify issues requiring further treatment.
 
@@ -42,7 +42,7 @@ Query:
 [dp_01_validate_prepared_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_01_validate_prepared_sales.sql)
 
 
-3. Final Preparation
+**3. Final Preparation**
 
 The final preparation incorporates the findings from the validation stage.
 
@@ -60,7 +60,7 @@ Query: (creates a view of final prepared data)
 [dp_02_prepared_data_final.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_02_prepared_data_final.sql)
 
 
-4. Final Validation
+**4. Final Validation**
 
 The final dataset is checked to confirm that:
 
@@ -79,7 +79,7 @@ Query:
 [dp_03_validate_final_dataset.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_03_validate_final_dataset.sql)
 
 
-5. Export Final Dataset
+**5. Export Final Dataset**
 
 The validated final dataset is exported to a CSV file for use in the analysis stage.
 
