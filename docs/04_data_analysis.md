@@ -1,6 +1,6 @@
 04 — Data Analysis
 
-![](https://img.shields.io/badge/-Objective-orange)
+Objective
 
 Analyze the prepared valid product sales data to answer the business question:
 
@@ -9,7 +9,7 @@ Analyze the prepared valid product sales data to answer the business question:
 Each analysis below examines a different dimension of the data — overall performance, trend over time, product concentration, customer value, customer retention, and geography — to build a complete picture of business performance, risk, and opportunity.
 
 
-1. Key Business Metrics (KPIs)
+1\. Key Business Metrics (KPIs)
 
 Calculates the core business metrics for valid product sales: total revenue, units sold, orders, customers, products, average order value, average basket size, average revenue per customer, average unit selling price, and average orders per customer.
 
