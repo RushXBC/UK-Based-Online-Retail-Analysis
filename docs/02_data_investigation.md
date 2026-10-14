@@ -138,6 +138,8 @@ Data preparation will apply those rules to create the prepared dataset.
 The rules for valid product sales are therefore defined in the next stage rather than being treated as assumptions within the investigation queries.
 
 INVESTIGATION FILES:
+<br>
+<br>
 [di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_00_initial_exploration.sql)
 <br>
 [di_01_transaction_characteristics.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
