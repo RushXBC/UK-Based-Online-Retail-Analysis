@@ -14,9 +14,9 @@ Each analysis below examines a different dimension of the data — overall perfo
 
 Calculates the core business metrics for valid product sales: total revenue, units sold, orders, customers, products, average order value, average basket size, average revenue per customer, average unit selling price, and average orders per customer.
 
-Query: da_01_basic_kpis.sql
+Query: [da_01_basic_kpis.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_01_basic_kpis.sql)
 
-Output: output_csv_files/basic_kpis.csv
+Output: [basic_kpis.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/basic_kpis.csv)
 
 <br>
 
