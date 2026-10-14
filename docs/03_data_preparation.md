@@ -131,7 +131,11 @@ The final dataset contains only valid product sales that passed the preparation 
 PREPARATION FILES:
 
 [dp_00_prepare_valid_product_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_00_prepare_valid_product_sales.sql)
+
 [dp_01_validate_prepared_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_01_validate_prepared_sales.sql)
+
 [dp_02_prepared_data_final.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_02_prepared_data_final.sql)
+
 [dp_03_validate_final_dataset.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_03_validate_final_dataset.sql)
+
 [dp_04_create_valid_product_sales_csv.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_04_create_valid_product_sales_csv.sql)
