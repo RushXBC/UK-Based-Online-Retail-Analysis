@@ -1,5 +1,5 @@
 02 — Data Investigation
-Objective
+OBJECTIVE:
 
 Investigate the raw dataset to understand its structure, transaction characteristics, and relationships between important fields.
 
@@ -7,7 +7,7 @@ Since no documentation or contact person exists for this dataset, the investigat
 
 No records are changed, removed, or corrected during this stage.
 
-Investigation Process
+INVESTIGATION PROCESS:
 
 The investigation was performed in four stages:
 
@@ -15,6 +15,7 @@ Initial data profiling
 Transaction characteristics
 Distinct value investigation
 StockCode and Description relationships
+
 1. Initial Data Profiling
 
 The first investigation established a basic understanding of the dataset.
@@ -73,7 +74,7 @@ Large quantity and price values were reviewed to identify unusual transaction re
 
 Query:
 
-di_01_transaction_characteristics.sql
+[di_01_transaction_characteristics.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
 
 3. Distinct Value Investigation
 
@@ -91,7 +92,7 @@ This was used to identify unusual, uncommon, or non-standard values that may req
 
 Query:
 
-di_02_distinct_values_investigation.sql
+[di_02_distinct_values_investigation.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
 
 4. StockCode and Description Relationships
 
@@ -117,9 +118,9 @@ These relationships are important when deciding how missing or inconsistent prod
 
 Query:
 
-di_03_stockcode_description_relationship.sql
+[di_03_stockcode_description_relationship.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_03_stockcode_description_relationship.sql)
 
-Investigation Outcome
+INVESTIGATION OUTCOME:
 
 The investigation provides the information needed to move from raw data exploration toward defining the project's valid product sales rules.
 
@@ -131,8 +132,8 @@ Data preparation will apply those rules to create the prepared dataset.
 
 The rules for valid product sales are therefore defined in the next stage rather than being treated as assumptions within the investigation queries.
 
-Investigation Files
-di_00_initial_exploration.sql
-di_01_transaction_characteristics.sql
-di_02_distinct_values_investigation.sql
-di_03_stockcode_description_relationship.sql
+INVESTIGATION FILES:
+[di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_00_initial_exploration.sql)
+[di_01_transaction_characteristics.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
+[di_02_distinct_values_investigation.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
+[di_03_stockcode_description_relationship.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_03_stockcode_description_relationship.sql)
