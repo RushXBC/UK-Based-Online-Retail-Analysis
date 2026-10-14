@@ -8,6 +8,8 @@ Since no documentation or contact person exists for this dataset, the investigat
 
 No records are changed, removed, or corrected during this stage.
 
+<br>
+
 **INVESTIGATION PROCESS:**
 
 <br>
@@ -121,7 +123,9 @@ Query:
 
 [di_03_stockcode_description_relationship.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_03_stockcode_description_relationship.sql)
 
-INVESTIGATION OUTCOME:
+<br>
+
+**INVESTIGATION OUTCOME:**
 
 The investigation provides the information needed to move from raw data exploration toward defining the project's valid product sales rules.
 
