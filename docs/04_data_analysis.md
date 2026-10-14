@@ -39,7 +39,8 @@ Visualization: images/monthly_revenue_mom_growth.png
 
 Visualization: images/quarterly_revenue_share.png
 
-FINDINGS:
+<details>
+<summary>click to expand FINDINGS:</summary>
 
 Q4 drives the year. The final quarter accounts for over a third of annual revenue — 35.2% in 2010 (€3.3M) and 33.5% in 2011 (€3.2M) — driven by peak holiday and end-of-year shopping. November is the single strongest month, pulling in over €1.4M each year as early Christmas shopping and major holiday sales events take hold.
 
@@ -55,6 +56,7 @@ BUSINESS RECOMMENDATIONS:
 
 * Run targeted promotions through the Q1 lull. Clearance sales or New Year deals in January and February can help sustain purchasing activity through the predictable post-holiday slowdown.
 
+</details>
 
 4. Monthly Revenue Volatility (Outlier Detection)
 
