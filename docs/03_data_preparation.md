@@ -29,6 +29,7 @@ Query: (creates a view of the initial prepared dataset)
 
 [dp_00_prepare_valid_product_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_00_prepare_valid_product_sales.sql)
 
+<br>
 
 **2. Initial Validation**
 
@@ -42,6 +43,7 @@ Query:
 
 [dp_01_validate_prepared_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_01_validate_prepared_sales.sql)
 
+<br>
 
 **3. Final Preparation**
 
@@ -60,6 +62,7 @@ Query: (creates a view of final prepared data)
 
 [dp_02_prepared_data_final.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_02_prepared_data_final.sql)
 
+<br>
 
 **4. Final Validation**
 
@@ -79,6 +82,7 @@ Query:
 
 [dp_03_validate_final_dataset.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_03_validate_final_dataset.sql)
 
+<br>
 
 **5. Export Final Dataset**
 
@@ -92,6 +96,7 @@ Output:
 
 [valid_product_sales.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/dataset/valid_product_sales.csv)
 
+<br>
 
 FINAL DATASET:
 
@@ -103,7 +108,9 @@ The exported analysis dataset is:
 
 `valid_product_sales.csv`
 
-Final Schema
+<br>
+
+FINAL SCHEMA
 
 | Column | Type | Description |
 |---|---|---|
@@ -119,6 +126,7 @@ Final Schema
 
 The final dataset contains only valid product sales that passed the preparation and validation rules.
 
+<br>
 
 PREPARATION FILES:
 
