@@ -21,6 +21,8 @@ Each row represents an item recorded on an invoice. An invoice can contain multi
 <br>
 
 **TOOLS**
-DuckDB — Data investigation, preparation, and analysis
-SQL — Data querying and transformation
-VS Code — Development environment
+
+- DuckDB — Data investigation, preparation, and analysis
+- SQL — Data querying and transformation
+- VS Code — Development environment
+- Tableau - Visualizations
