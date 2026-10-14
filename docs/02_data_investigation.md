@@ -1,7 +1,5 @@
 **02 — Data Investigation**
-
-<br>
-
+---
 **OBJECTIVE:**
 
 Investigate the raw dataset to understand its structure, transaction characteristics, and relationships between important fields.
