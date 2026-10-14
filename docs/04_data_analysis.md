@@ -26,7 +26,7 @@ Breaks down the core KPIs (revenue, orders, customers, units sold, AOV, basket s
 
 Query: [da_02_monthly_kpis.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_02_monthly_kpis.sql)
 
-Output: [output_csv_files/monthly_kpis.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/monthly_kpis.csv)
+Output: [monthly_kpis.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/monthly_kpis.csv)
 
 
 <br>
@@ -35,13 +35,9 @@ Output: [output_csv_files/monthly_kpis.csv](https://github.com/RushXBC/UK-Based-
 
 Calculates month-over-month revenue and percent growth, to assess how consistently the business is growing.
 
-Query: da_03_mom_growth_rate.sql
+Query: [da_03_mom_growth_rate.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_03_mom_growth_rate.sql)
 
-Output: output_csv_files/mom_growth_rate.csv
-
-Visualization: images/monthly_revenue_mom_growth.png
-
-Visualization: images/quarterly_revenue_share.png
+Output: [mom_growth_rate.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/mom_growth_rate.csv)
 
 **FINDINGS:**
 
@@ -61,11 +57,9 @@ Visualization: images/quarterly_revenue_share.png
 
 Flags months whose revenue growth deviates significantly from the average month-over-month growth rate, using a z-score, to identify unusually strong or weak months. Reuses the month-over-month growth calculation from the previous analysis as its base.
 
-Query: da_04_monthly_revenue_outlier_analysis.sql
+Query: [da_04_monthly_revenue_outlier_analysis.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_04_monthly_revenue_outlier_analysis.sql)
 
-Output: output_csv_files/monthly_revenue_outlier_analysis.csv
-
-Visualization: images/mom_growth_volatility_tiers.png
+Output: [monthly_revenue_outlier_analysis.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/monthly_revenue_outlier_analysis.csv)
 
 **FINDINGS:**
 
@@ -83,9 +77,9 @@ Visualization: images/mom_growth_volatility_tiers.png
 
 Ranks products from highest to lowest revenue and calculates each product's individual and cumulative share of total revenue, to assess how concentrated revenue is across the product catalog.
 
-Query: da_05_cumulative_product_revenue_share.sql
+Query: [da_05_cumulative_product_revenue_share.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_05_cumulative_product_revenue_share.sql)
 
-Output: output_csv_files/cumulative_product_revenue_share.csv
+Output: [cumulative_product_revenue_share.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/cumulative_product_revenue_share.csv)
 
 <br>
 
@@ -93,9 +87,9 @@ Output: output_csv_files/cumulative_product_revenue_share.csv
 
 Determines how many products, and what share of the total catalog, are required to generate 80% of total revenue — a direct measure of product concentration risk.
 
-Query: da_06_pareto_summary.sql
+Query: [da_06_pareto_summary.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_06_pareto_summary.sql)
 
-Output: output_csv_files/pareto_summary.csv
+Output: [pareto_summary.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/pareto_summary.csv)
 
 **FINDINGS:**
 - Strict Alignment with the 80/20 Rule: Top-performing SKUs represent 21.24% of the catalog, generating 80% of total sales across the 4,902 evaluated products.
@@ -107,7 +101,7 @@ Output: output_csv_files/pareto_summary.csv
 - Review Long-Tail Catalog for Clearance: Merchandising teams audit the 3,861 low-performing SKUs to identify slow-moving items for discount clearance or delisting.
 - Align Ad Spend with High-Yield SKUs: Performance marketing shifts ad budget toward the top 21.24% of products to maximize return on ad spend (ROAS).
 
-NOTE: Refer to da_06a_pareto_tier_a_skus.sql (output exported to pareto_tier_a_skus.csv) and da_06b_pareto_tail_skus.sql (output exported to pareto_tail_skus.csv) to view the specific product queries for the top 80% and bottom 20% revenue drivers, respectively.
+NOTE: Refer to [da_06a_pareto_tier_a_skus.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_06a_pareto_tier_a_skus.sql) (output exported to [pareto_tier_a_skus.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/pareto_tier_a_skus.csv)) and [da_06b_pareto_tail_skus.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_06b_pareto_tail_skus.sql) (output exported to [pareto_tail_skus.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/pareto_tail_skus.csv)) to view the specific product queries for the top 80% and bottom 20% revenue drivers, respectively.
 
 <br>
 
@@ -115,9 +109,10 @@ NOTE: Refer to da_06a_pareto_tier_a_skus.sql (output exported to pareto_tier_a_s
 
 Segments customers based on Recency, Frequency, and Monetary value to identify customer value patterns and segments at risk of churn. Customers are scored 1–5 on each dimension and grouped into named segments: Champions, Loyal Customers, Slipping Loyalists, At Risk (High Value), New / Promising, Hibernating (High Value), Hibernating, Lost / Churned, and Standard / Active (residual segment for customers not captured by another rule).
 
-Query: da_07_rfm_customer_segmentation.sql
+Query: [da_07_rfm_customer_segmentation.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_07_rfm_customer_segmentation.sql)
 
-Output: output_csv_files/rfm_customer_segmentation.csv
+Output: [rfm_customer_segmentation.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/rfm_customer_segmentation.csv)
+
 
 NOTE: Note: Refer to Section 8 (RFM Segment Summary) for the analysis on this segment distribution, as customer values are aggregated and quantified there.
 
@@ -127,9 +122,9 @@ NOTE: Note: Refer to Section 8 (RFM Segment Summary) for the analysis on this se
 
 Summarizes customer count and revenue share for each RFM segment, to quantify customer concentration and the revenue currently sitting in at-risk segments. This query reads from the exported RFM segmentation output (output_csv_files/rfm_customer_segmentation.csv) rather than the raw valid_product_sales.csv, since it summarizes the results of the segmentation analysis above rather than recalculating them.
 
-Query: da_08_rfm_overall_segment_distribution.sql
+Query: [da_08_rfm_overall_segment_distribution.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_08_rfm_overall_segment_distribution.sql)
 
-Output: output_csv_files/rfm_overall_segment_distribution.csv
+Output: [rfm_overall_segment_distribution.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/rfm_overall_segment_distribution.csv)
 
 **FINDINGS:**
 - Strict Alignment with the 80/20 Rule: Top-performing SKUs represent 21.24% of the catalog, generating 80% of total sales across the 4,902 evaluated products.
@@ -146,9 +141,9 @@ Output: output_csv_files/rfm_overall_segment_distribution.csv
 
 Aggregates revenue, transactions, customers, and average order value by country, along with each country's percentage contribution to total revenue, to identify geographic concentration and performance differences across markets.
 
-Query: da_09_country_level_metrics.sql
+Query: [da_09_country_level_metrics.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_09_country_level_metrics.sql)
 
-Output: output_csv_files/country_level_metrics.csv
+Output: [country_level_metrics.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/country_level_metrics.csv)
 
 **FINDINGS:**
 - Single-Market Revenue Dependence (UK): The business relies heavily on the United Kingdom, which generates 85.77% of total revenue (16,849,429.02 across 5,347 customers and 36,238 transactions). Any downturn or disruption in the domestic market creates a major risk for total company revenue.
@@ -171,9 +166,9 @@ Groups customers by their first purchase month and tracks what percentage of eac
 
 A. Monthly Purchase Retention — a customer is counted as retained in a given month only if they made a purchase in that specific calendar month. This is a strict, month-by-month view of repeat purchase activity.
 
-Query: da_10a_monthly_cohort_purchase_retention.sql
+Query: [da_10a_monthly_cohort_purchase_retention.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_10a_monthly_cohort_purchase_retention.sql)
 
-Output: output_csv_files/monthly_cohort_purchase_retention.csv
+Output: [monthly_cohort_purchase_retention.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/monthly_cohort_purchase_retention.csv)
 
 **FINDINGS:**
 - Dec 2009 Cohort Benchmark: The Dec 2009 cohort maintains the highest long-term repeat purchase rates (25.45%–42.48%) across the two-year period.
@@ -195,9 +190,9 @@ Output: output_csv_files/monthly_cohort_purchase_retention.csv
 
 B. 90-Day Grace Period Retention — a customer remains counted as retained as long as they make at least one purchase within any rolling 90-day window; they are only considered churned once they exceed 90 days without a purchase. This better reflects retail purchase behavior, where customers may skip a calendar month without having actually churned.
 
-Query: da_10b_customer_cohort_survival_90d.sql
+Query: [da_10b_customer_cohort_survival_90d.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_10b_customer_cohort_survival_90d.sql)
 
-Output: output_csv_files/customer_cohort_survival_90d.csv
+Output: [customer_cohort_survival_90d.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/customer_cohort_survival_90d.csv)
 
 **FINDINGS:**
 
