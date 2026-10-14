@@ -22,7 +22,7 @@ Independent Metric Standards: All business rules, data filters, and valid sales 
 
 The dataset is used to answer the following business question:
 
-"How is the business performing based on valid product sales, and where are the opportunities or risks?"
+> "How is the business performing based on valid product sales, and where are the opportunities or risks?"
 
 The raw dataset will be investigated before defining what will be treated as a valid product sale for this analysis.
 
