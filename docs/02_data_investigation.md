@@ -139,6 +139,9 @@ The rules for valid product sales are therefore defined in the next stage rather
 
 INVESTIGATION FILES:
 [di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_00_initial_exploration.sql)
+<br>
 [di_01_transaction_characteristics.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
+<br>
 [di_02_distinct_values_investigation.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
+<br>
 [di_03_stockcode_description_relationship.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_03_stockcode_description_relationship.sql)
