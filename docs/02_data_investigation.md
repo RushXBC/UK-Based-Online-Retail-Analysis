@@ -90,7 +90,7 @@ The following fields were reviewed:
 
 The number of rows associated with each distinct value was included to show how frequently each value occurs.
 
-This was used to identify unusual, uncommon, or non-standard values that may require consideration when defining valid product sales.
+> This was used to identify unusual, uncommon, or non-standard values that may require consideration when defining valid product sales.
 
 Query:
 
