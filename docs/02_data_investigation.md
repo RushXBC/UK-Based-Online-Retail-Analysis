@@ -125,8 +125,6 @@ Query:
 
 INVESTIGATION OUTCOME:
 
-<details>
-<summary>Click to expand</summary>
 The investigation provides the information needed to move from raw data exploration toward defining the project's valid product sales rules.
 
 At this stage, the investigation and the business definition remain separate:
@@ -136,8 +134,6 @@ Business rules define what will be considered a valid product sale.
 Data preparation will apply those rules to create the prepared dataset.
 
 The rules for valid product sales are therefore defined in the next stage rather than being treated as assumptions within the investigation queries.
-
-</details>
 
 INVESTIGATION FILES:
 [di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_00_initial_exploration.sql)
