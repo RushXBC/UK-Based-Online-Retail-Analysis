@@ -1,7 +1,7 @@
 **03 — Data Preparation**
 ---
 
-**Objective**
+**OBJECTIVE**
 
 Prepare the transaction data for analysis by defining valid product sales, handling missing descriptions, applying data standardization, removing non-product transactions, and removing exact duplicate rows.
 
