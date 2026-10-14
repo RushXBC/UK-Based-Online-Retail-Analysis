@@ -1,5 +1,5 @@
 04 — Data Analysis
-
+---
 Objective
 
 Analyze the prepared valid product sales data to answer the business question:
