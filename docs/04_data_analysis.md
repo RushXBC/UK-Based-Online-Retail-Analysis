@@ -24,9 +24,10 @@ Output: [basic_kpis.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analy
 
 Breaks down the core KPIs (revenue, orders, customers, units sold, AOV, basket size) at a monthly grain to show trend over time.
 
-Query: da_02_monthly_kpis.sql
+Query: [da_02_monthly_kpis.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/da_02_monthly_kpis.sql)
 
-Output: output_csv_files/monthly_kpis.csv
+Output: [output_csv_files/monthly_kpis.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/output_csv_files/monthly_kpis.csv)
+
 
 <br>
 
