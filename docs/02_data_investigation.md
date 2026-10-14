@@ -137,6 +137,8 @@ Data preparation will apply those rules to create the prepared dataset.
 
 The rules for valid product sales are therefore defined in the next stage rather than being treated as assumptions within the investigation queries.
 
+<br>
+
 INVESTIGATION FILES:
 <br>
 <br>
