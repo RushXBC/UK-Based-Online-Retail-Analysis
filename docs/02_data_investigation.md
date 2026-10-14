@@ -18,17 +18,16 @@ The first investigation established a basic understanding of the dataset.
 
 It examined:
 
-Total number of rows
-
-Distinct invoices
-Distinct StockCodes
-Distinct descriptions
-Distinct customers
-Distinct countries
-NULL values across the main columns
-Quantity ranges and quantity types
-Price ranges and price types
-Invoice date validity and date range
+- Total number of rows
+- Distinct invoices
+- Distinct StockCodes
+- Distinct descriptions
+- Distinct customers
+- Distinct countries
+- NULL values across the main columns
+- Quantity ranges and quantity types
+- Price ranges and price types
+- Invoice date validity and date range
 
 Query:
 
@@ -42,32 +41,32 @@ The second investigation examined how different types of transaction values appe
 
 It examined:
 
-Invoice values
-Invoices beginning with C
-Invoices not beginning with C
-Invoice values containing non-numeric characters
-Invoice values with lengths other than six characters
-StockCodes
-Numeric StockCodes
-Non-numeric StockCodes
-Number of rows associated with each type
-Quantity and Price
+- Invoice values
+- Invoices beginning with C
+- Invoices not beginning with C
+- Invoice values containing non-numeric characters
+- Invoice values with lengths other than six characters
+- StockCodes
+- Numeric StockCodes
+- Non-numeric StockCodes
+- Number of rows associated with each type
+- Quantity and Price
 
 The different combinations of quantity and price were examined, including:
 
-Positive quantity and positive price
-Positive quantity and zero or negative price
-Negative quantity and positive price
-Negative quantity and zero or negative price
-Zero quantity with different price values
-Description and StockCode
+- Positive quantity and positive price
+- Positive quantity and zero or negative price
+- Negative quantity and positive price
+- Negative quantity and zero or negative price
+- Zero quantity with different price values
+- Description and StockCode
 
 The investigation also examined:
 
-StockCodes associated with multiple descriptions
-Descriptions associated with multiple StockCodes
-Rows with a NULL description but a StockCode
-Extreme values
+- StockCodes associated with multiple descriptions
+- Descriptions associated with multiple StockCodes
+- Rows with a NULL description but a StockCode
+- Extreme values
 
 Large quantity and price values were reviewed to identify unusual transaction records.
 
@@ -83,9 +82,9 @@ The third investigation looked at the actual distinct values contained in import
 
 The following fields were reviewed:
 
-StockCode
-Description
-Country
+- StockCode
+- Description
+- Country
 
 The number of rows associated with each distinct value was included to show how frequently each value occurs.
 
@@ -103,20 +102,20 @@ The fourth investigation focused specifically on the relationship between StockC
 
 It examined:
 
-StockCodes with multiple descriptions
+- StockCodes with multiple descriptions
 
 This identifies products where the same StockCode appears with different descriptions.
 The investigation includes the list of descriptions associated with each StockCode and the number of rows involved.
 
-Descriptions with multiple StockCodes
+- Descriptions with multiple StockCodes
 
 This identifies descriptions that are associated with more than one StockCode.
 
-StockCodes without a description
+- StockCodes without a description
 
 This identifies StockCodes that appear on rows where the Description is NULL.
 
-These relationships are important when deciding how missing or inconsistent product descriptions should be handled during data preparation.
+> These relationships are important when deciding how missing or inconsistent product descriptions should be handled during data preparation.
 
 Query:
 
