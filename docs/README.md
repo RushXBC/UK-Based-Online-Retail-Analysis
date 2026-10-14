@@ -22,7 +22,10 @@ Each row represents an item recorded on an invoice. An invoice can contain multi
 
 **TOOLS**
 
-- DuckDB — Data investigation, preparation, and analysis
-- SQL — Data querying and transformation
-- VS Code — Development environment
-- Tableau - Visualizations
+**TOOLS & TECHNOLOGIES**
+
+- **VS Code** — Development environment
+- **SQL** — Data querying and transformation
+- **DuckDB** — Data preparation, querying, and analysis
+- **Tableau Public** — Data visualization and dashboard development
+- **Git LFS** — Version control support for large files
