@@ -26,7 +26,7 @@ The initial preparation also:
 
 Query:
 
-`dp_00_prepare_valid_product_sales.sql`
+[dp_00_prepare_valid_product_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_00_prepare_valid_product_sales.sql)
 
 
 2. Initial Validation
@@ -39,7 +39,7 @@ This validation identified exact duplicate rows in the prepared dataset, which w
 
 Query:
 
-`dp_01_validate_prepared_sales.sql`
+[dp_01_validate_prepared_sales.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_01_validate_prepared_sales.sql)
 
 
 3. Final Preparation
@@ -57,7 +57,7 @@ An exact duplicate is defined as a row where all prepared columns have identical
 
 Query:
 
-`dp_02_prepared_data_final.sql`
+[dp_02_prepared_data_final.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_02_prepared_data_final.sql)
 
 
 4. Final Validation
@@ -76,7 +76,7 @@ Row counts are also reconciled between the raw dataset, the data before deduplic
 
 Query:
 
-`dp_03_validate_final_dataset.sql`
+[dp_03_validate_final_dataset.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_03_validate_final_dataset.sql)
 
 
 5. Export Final Dataset
@@ -85,11 +85,11 @@ The validated final dataset is exported to a CSV file for use in the analysis st
 
 Query:
 
-`dp_04_create_valid_product_sales_csv.sql`
+[dp_04_create_valid_product_sales_csv.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/dp_04_create_valid_product_sales_csv.sql)
 
 Output:
 
-`valid_product_sales.csv`
+[valid_product_sales.csv](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/dataset/valid_product_sales.csv)
 
 
 Final Dataset
