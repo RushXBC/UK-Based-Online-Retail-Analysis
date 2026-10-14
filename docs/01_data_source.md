@@ -57,12 +57,13 @@ The data is therefore represented at the transaction-line level, rather than one
 
 The CSV is loaded into DuckDB with the following schema:
 
-Column	DuckDB Type
-Invoice	VARCHAR
-StockCode	VARCHAR
-Description	VARCHAR
-Quantity	BIGINT
-InvoiceDate	VARCHAR
-Price	DOUBLE
-Customer ID	BIGINT
-Country	VARCHAR
+| Column | DuckDB Type |
+| :--- | :--- |
+| **Invoice** | VARCHAR |
+| **StockCode** | VARCHAR |
+| **Description** | VARCHAR |
+| **Quantity** | BIGINT |
+| **InvoiceDate** | VARCHAR |
+| **Price** | DOUBLE |
+| **Customer ID** | BIGINT |
+| **Country** | VARCHAR |
