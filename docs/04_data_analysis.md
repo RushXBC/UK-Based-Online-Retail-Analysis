@@ -8,6 +8,7 @@ Analyze the prepared valid product sales data to answer the business question:
 
 Each analysis below examines a different dimension of the data — overall performance, trend over time, product concentration, customer value, customer retention, and geography — to build a complete picture of business performance, risk, and opportunity.
 
+<br>
 
 1\. Key Business Metrics (KPIs)
 
@@ -17,6 +18,7 @@ Query: da_01_basic_kpis.sql
 
 Output: output_csv_files/basic_kpis.csv
 
+<br>
 
 2. Monthly Sales Metrics
 
@@ -26,6 +28,7 @@ Query: da_02_monthly_kpis.sql
 
 Output: output_csv_files/monthly_kpis.csv
 
+<br>
 
 3. Monthly Revenue Growth Rate
 
@@ -39,8 +42,7 @@ Visualization: images/monthly_revenue_mom_growth.png
 
 Visualization: images/quarterly_revenue_share.png
 
-<details>
-<summary>click to expand FINDINGS:</summary>
+FINDINGS:
 
 Q4 drives the year. The final quarter accounts for over a third of annual revenue — 35.2% in 2010 (€3.3M) and 33.5% in 2011 (€3.2M) — driven by peak holiday and end-of-year shopping. November is the single strongest month, pulling in over €1.4M each year as early Christmas shopping and major holiday sales events take hold.
 
@@ -56,7 +58,7 @@ BUSINESS RECOMMENDATIONS:
 
 * Run targeted promotions through the Q1 lull. Clearance sales or New Year deals in January and February can help sustain purchasing activity through the predictable post-holiday slowdown.
 
-</details>
+<br>
 
 4. Monthly Revenue Volatility (Outlier Detection)
 
@@ -82,6 +84,7 @@ BUSINESS RECOMMENDATIONS:
 
 * Buffer for the December Drop-off: Operations and inventory management must account for the steep post-November drop so the business isn't left overstaffed or carrying excess holiday inventory into January.
 
+<br>
 
 5. Cumulative Product Revenue Share
 
@@ -91,6 +94,7 @@ Query: da_05_cumulative_product_revenue_share.sql
 
 Output: output_csv_files/cumulative_product_revenue_share.csv
 
+<br>
 
 6. Pareto Analysis (80/20 Rule) for Product Revenue
 
@@ -118,6 +122,7 @@ BUSINESS RECOMMENDATIONS:
 
 NOTE: Refer to da_06a_pareto_tier_a_skus.sql (output exported to pareto_tier_a_skus.csv) and da_06b_pareto_tail_skus.sql (output exported to pareto_tail_skus.csv) to view the specific product queries for the top 80% and bottom 20% revenue drivers, respectively.
 
+<br>
 
 7. RFM Customer Segmentation
 
@@ -128,6 +133,8 @@ Query: da_07_rfm_customer_segmentation.sql
 Output: output_csv_files/rfm_customer_segmentation.csv
 
 NOTE: Note: Refer to Section 8 (RFM Segment Summary) for the analysis on this segment distribution, as customer values are aggregated and quantified there.
+
+<br>
 
 8. RFM Segment Summary
 
@@ -151,6 +158,7 @@ BUSINESS RECOMMENDATIONS:
 
 * Review Long-Tail Catalog for Clearance: Merchandising and warehouse operations teams audit the 3,861 low-performing SKUs to identify slow-moving items for discount clearance or delisting, freeing up valuable shelf space and reducing warehouse storage overhead currently tied up in low-yielding inventory.
 
+<br>
 
 9. Country-Level Sales Performance
 
@@ -182,6 +190,7 @@ BUSINESS RECOMMENDATIONS:
 
 * Implement Guest Profile Stitching at Checkout: IT and analytics teams update checkout workflows to prompt account creation or track guest sessions using browser/session identifiers, resolving untracked revenue in regions showing 0 registered customers (such as Hong Kong and Bermuda).
 
+<br>
 
 10. Cohort Retention Analysis
 
@@ -221,6 +230,8 @@ BUSINESS RECOMMENDATIONS:
 
 * Standardization of Data Cutoff Labeling: Analytics explicitly annotates partial-month reporting periods like Dec 2011 on dashboards to prevent mistaking reporting lag for customer churn.
 
+<br>
+
 B. 90-Day Grace Period Retention — a customer remains counted as retained as long as they make at least one purchase within any rolling 90-day window; they are only considered churned once they exceed 90 days without a purchase. This better reflects retail purchase behavior, where customers may skip a calendar month without having actually churned.
 
 Query: da_10b_customer_cohort_survival_90d.sql
@@ -229,24 +240,17 @@ Output: output_csv_files/customer_cohort_survival_90d.csv
 
 FINDINGS:
 
-Dec 2009 Cohort Benchmark: The Dec 2009 cohort maintains the highest cumulative survival rate across the entire 24-month horizon, ending at 18.61% retention in Dec 2011.   
+- **Dec 2009 Cohort Benchmark:** The Dec 2009 cohort maintains the highest cumulative survival rate across the entire 24-month horizon, ending at 18.61% retention in Dec 2011.
+- **90-Day Inactivity Rule Artifact:** Because churn is defined as 90 consecutive days of inactivity, every cohort displays 100% survival across its first three months (Month 0 through Month 2).
+- **Post-90-Day Cliff:** Steep drop-offs occur immediately in Month 3 across almost all cohorts. For example, the Dec 2009 cohort drops from 100% to 62.99% in Mar 2010, while the Dec 2010 cohort drops from 100% to 18.42% in Mar 2011.
+- **Top-of-Funnel Acquisition Decline:** Initial cohort sizes contract significantly over time, falling from 951 customers in Dec 2009 to an average of ~100 per month in 2011, reaching a low of 28 customers in Dec 2011.
+- **Complete Churn in Weak Cohorts:** The Dec 2010 cohort experiences complete cumulative customer attrition, reaching 0% retention by Oct 2011.
+- **Survival Floor Range:** Excluding the zeroed-out Dec 2010 cohort, long-term survival rates across mature cohorts settle into a floor between 3.75% and 18.61% by Dec 2011.   
 
-90-Day Inactivity Rule Artifact: Because churn is defined as 90 consecutive days of inactivity, every cohort displays 100% survival across its first three months (Month 0 through Month 2).   
+---**BUSINESS RECOMMENDATIONS:**
 
-Post-90-Day Cliff: Steep drop-offs occur immediately in Month 3 across almost all cohorts. For example, the Dec 2009 cohort drops from 100% to 62.99% in Mar 2010, while the Dec 2010 cohort drops from 100% to 18.42% in Mar 2011.   
-
-Top-of-Funnel Acquisition Decline: Initial cohort sizes contract significantly over time, falling from 951 customers in Dec 2009 to an average of ~100 per month in 2011, reaching a low of 28 customers in Dec 2011.   
-
-Complete Churn in Weak Cohorts: The Dec 2010 cohort experiences complete cumulative customer attrition, reaching 0% retention by Oct 2011.   
-
-Survival Floor Range: Excluding the zeroed-out Dec 2010 cohort, long-term survival rates across mature cohorts settle into a floor between 3.75% and 18.61% by Dec 2011.   
-
-BUSINESS RECOMMENDATIONS:
-
-* Optimization of Post-90-Day Re-engagement Sequences: Marketing triggers targeted reactivation offers right before the 90-day inactivity mark to catch the steep Month 3 drop-off (such as Dec 2010 falling to 18.42%).   
-
-* Restoration of Top-of-Funnel Acquisition: Performance marketing audits acquisition channels to fix the volume drop from 951 users in Dec 2009 down to 28 users in Dec 2011.   
-
-* Investigation of Dec 2010 Cohort Attrition Mechanics: CRM and product teams review onboarding factors that caused total customer loss (0% retention) in Dec 2010 to prevent similar churn patterns in newer cohorts.
+- Optimization of Post-90-Day Re-engagement Sequences: Marketing triggers targeted reactivation offers right before the 90-day inactivity mark to catch the steep Month 3 drop-off (such as Dec 2010 falling to 18.42%).   
+- Restoration of Top-of-Funnel Acquisition: Performance marketing audits acquisition channels to fix the volume drop from 951 users in Dec 2009 down to 28 users in Dec 2011.
+- Investigation of Dec 2010 Cohort Attrition Mechanics: CRM and product teams review onboarding factors that caused total customer loss (0% retention) in Dec 2010 to prevent similar churn patterns in newer cohorts.
 
 **Both query versions pivot the results into a cohort retention matrix (cohort month as rows, months since acquisition — M00 through M24 — as columns).**
