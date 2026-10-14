@@ -1,5 +1,8 @@
-02 — Data Investigation
-OBJECTIVE:
+**02 — Data Investigation**
+
+<br>
+
+**OBJECTIVE:**
 
 Investigate the raw dataset to understand its structure, transaction characteristics, and relationships between important fields.
 
@@ -7,16 +10,11 @@ Since no documentation or contact person exists for this dataset, the investigat
 
 No records are changed, removed, or corrected during this stage.
 
-INVESTIGATION PROCESS:
+**INVESTIGATION PROCESS:**
 
-The investigation was performed in four stages:
+<br>
 
-Initial data profiling
-Transaction characteristics
-Distinct value investigation
-StockCode and Description relationships
-
-1. Initial Data Profiling
+**1. Initial Data Profiling**
 
 The first investigation established a basic understanding of the dataset.
 
@@ -37,7 +35,9 @@ Query:
 
 [di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_00_initial_exploration.sql)
 
-2. Transaction Characteristics
+<br>
+
+**2. Transaction Characteristics**
 
 The second investigation examined how different types of transaction values appear in the dataset.
 
@@ -76,7 +76,9 @@ Query:
 
 [di_01_transaction_characteristics.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
 
-3. Distinct Value Investigation
+<br>
+
+**3. Distinct Value Investigation**
 
 The third investigation looked at the actual distinct values contained in important categorical fields.
 
@@ -94,7 +96,9 @@ Query:
 
 [di_02_distinct_values_investigation.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_01_transaction_characteristics.sql)
 
-4. StockCode and Description Relationships
+<br>
+
+**4. StockCode and Description Relationships**
 
 The fourth investigation focused specifically on the relationship between StockCode and Description.
 
@@ -103,7 +107,6 @@ It examined:
 StockCodes with multiple descriptions
 
 This identifies products where the same StockCode appears with different descriptions.
-
 The investigation includes the list of descriptions associated with each StockCode and the number of rows involved.
 
 Descriptions with multiple StockCodes
@@ -122,6 +125,8 @@ Query:
 
 INVESTIGATION OUTCOME:
 
+<details>
+<summary>Click to expand</summary>
 The investigation provides the information needed to move from raw data exploration toward defining the project's valid product sales rules.
 
 At this stage, the investigation and the business definition remain separate:
@@ -131,6 +136,8 @@ Business rules define what will be considered a valid product sale.
 Data preparation will apply those rules to create the prepared dataset.
 
 The rules for valid product sales are therefore defined in the next stage rather than being treated as assumptions within the investigation queries.
+
+</details>
 
 INVESTIGATION FILES:
 [di_00_initial_exploration.sql](https://github.com/RushXBC/UK-Based-Online-Retail-Analysis/blob/main/sql_queries/di_00_initial_exploration.sql)
