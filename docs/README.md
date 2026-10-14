@@ -1,4 +1,5 @@
-Online Retail Sales Analysis
+**UK-Based Online Retail Sales Analysis**
+---
 
 An end-to-end data analysis project using the Online Retail II dataset from the UCI Machine Learning Repository.
 
