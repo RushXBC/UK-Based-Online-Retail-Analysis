@@ -247,7 +247,7 @@ FINDINGS:
 - **Complete Churn in Weak Cohorts:** The Dec 2010 cohort experiences complete cumulative customer attrition, reaching 0% retention by Oct 2011.
 - **Survival Floor Range:** Excluding the zeroed-out Dec 2010 cohort, long-term survival rates across mature cohorts settle into a floor between 3.75% and 18.61% by Dec 2011.   
 
----**BUSINESS RECOMMENDATIONS:**
+---**BUSINESS RECOMMENDATIONS:**---
 
 - Optimization of Post-90-Day Re-engagement Sequences: Marketing triggers targeted reactivation offers right before the 90-day inactivity mark to catch the steep Month 3 drop-off (such as Dec 2010 falling to 18.42%).   
 - Restoration of Top-of-Funnel Acquisition: Performance marketing audits acquisition channels to fix the volume drop from 951 users in Dec 2009 down to 28 users in Dec 2011.
