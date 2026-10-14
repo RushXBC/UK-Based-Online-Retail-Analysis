@@ -20,8 +20,6 @@ Each row represents an item recorded on an invoice. An invoice can contain multi
 
 <br>
 
-**TOOLS**
-
 **TOOLS & TECHNOLOGIES**
 
 - **VS Code** — Development environment
