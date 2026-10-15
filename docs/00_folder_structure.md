@@ -4,9 +4,6 @@
 <!-- START_TREE -->
 ```text
 practice sql (online retail)/
-├── .gitattributes
-├── .vscode
-│   └── settings.json
 ├── FULL VIZ.twbx
 ├── LICENSE
 ├── dataset
