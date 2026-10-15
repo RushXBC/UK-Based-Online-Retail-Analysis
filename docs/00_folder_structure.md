@@ -1,5 +1,4 @@
-
-# Practice SQL (Online Retail) - Folder Structure
+Folder Structure
 
 <!-- START_TREE -->
 ```text
