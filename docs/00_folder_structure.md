@@ -1,5 +1,5 @@
 Folder Structure
-
+---
 <!-- START_TREE -->
 ```text
 practice sql (online retail)/
