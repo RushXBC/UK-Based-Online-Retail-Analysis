@@ -1,4 +1,4 @@
-Folder Structure
+**00 — Folder Structure**
 ---
 <!-- START_TREE -->
 ```text
